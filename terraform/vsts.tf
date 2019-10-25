@@ -1,16 +1,13 @@
 # a file named terraform.tfvars is automatically loaded
-variable "vsts-account" {
+
+variable "azp-url" {
   default = ""
 }
 
-variable "vsts-token" {
+variable "azp-token" {
   default = ""
 }
 
-variable "vsts-agent" {
-  default = "ACI-Agent1"
-}
-
-variable "vsts-pool" {
+variable "azp-pool" {
   default = "ACI-Pool"
 }

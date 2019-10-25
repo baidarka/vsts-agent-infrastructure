@@ -52,13 +52,12 @@ resource "azurerm_container_group" "cocicd" {
     }
 
     environment_variables = {
-      "VSTS_AGENT"   = "${var.vsts-agent}"
-      "VSTS_POOL"    = "${var.vsts-pool}"
+      "AZP_POOL"    = "${var.azp-pool}"
     }
 
     secure_environment_variables = {
-      "VSTS_ACCOUNT" = "${var.vsts-account}"
-      "VSTS_TOKEN"   = "${var.vsts-token}"
+      "AZP_TOKEN"   = "${var.azp-token}"
+      "AZP_URL"     = "${var.azp-url}"
     }
 
     volume {
