@@ -1,12 +1,13 @@
-FROM microsoft/vsts-agent:latest
+FROM mcr.microsoft.com/azure-pipelines/vsts-agent:latest AS builder
 
 # Build-time metadata as defined at http://label-schema.org
 
+# Retain pointers to the original author
 LABEL org.label-schema.name="Azure DevOps Build Agent with Infrastrucure Tools" \
     org.label-schema.url="https://github.com/lenisha/" \
     org.label-schema.vcs-url="https://github.com/lenisha/vsts-agent-infrastructure" \
     org.label-schema.schema-version="1.0"
-                
+
 ENV TERRAFORM_VERSION 0.12.12
 ENV PACKER_VERSION 1.4.4
 ENV ANSIBLE_VERSION 2.3.1

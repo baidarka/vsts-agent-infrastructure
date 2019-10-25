@@ -1,5 +1,5 @@
 variable "vsts-account" {
-  default = "eneros"
+  default = ""
 }
 
 variable "vsts-token" {
@@ -7,7 +7,7 @@ variable "vsts-token" {
 }
 
 variable "vsts-agent" {
-  default = "ACI-Agent"
+  default = "ACI-Agent1"
 }
 
 variable "vsts-pool" {
