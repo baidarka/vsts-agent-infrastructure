@@ -35,7 +35,7 @@ Open <https://shell.azure.com>, select Bash shell, then:
 `cd vsts-agent-infrastructure/terraform`  
 `terraform init`  
 `terraform plan`  
-`terraform apply -var vsts-account=<vsts account> -var vsts-token=<pat token> -var-file="variables.tfvars"`
+`terraform apply -var vsts-account=<vsts account> -var vsts-token=<pat token> -var-file="vsts.tf"`
 
 
 ## Notes
