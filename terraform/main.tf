@@ -43,7 +43,7 @@ resource "azurerm_container_group" "cocicd" {
 
   container {
     name   = "azure-devops-agent"
-    image  = "knoflook/vsts-agent-infrastructure"
+    image  = "knoflook/vsts-agent-infrastructure:1.0.0"
     cpu    = "0.5"
     memory = "1.5"
     ports {
