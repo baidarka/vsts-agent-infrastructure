@@ -2,14 +2,14 @@ FROM microsoft/vsts-agent:latest
 
 # Build-time metadata as defined at http://label-schema.org
 
-LABEL org.label-schema.name="VSTS Agent with Infrastrucure Tools" \
+LABEL org.label-schema.name="Azure DevOps Build Agent with Infrastrucure Tools" \
     org.label-schema.url="https://github.com/lenisha/" \
     org.label-schema.vcs-url="https://github.com/lenisha/vsts-agent-infrastructure" \
     org.label-schema.schema-version="1.0"
                 
-ENV TERRAFORM_VERSION 0.11.10
-ENV PACKER_VERSION 1.3.2
-ENV ANSIBLE_VERSION 2.0.0.2
+ENV TERRAFORM_VERSION 0.12.12
+ENV PACKER_VERSION 1.4.4
+ENV ANSIBLE_VERSION 2.3.1
 
 # Install Packer
 RUN echo "===> Installing Packer ${PACKER_VERSION} ..." \
