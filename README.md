@@ -39,6 +39,7 @@ Open <https://shell.azure.com>, select Bash shell, then:
 
 ## Notes
 
+- TODO: remove random number from Storage Account, this hampers idempotent deployments
 - TODO: add automatic updates when new release posted
 
 - Other tools installed on VSTS image are listed:
