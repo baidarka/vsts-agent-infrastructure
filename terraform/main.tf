@@ -1,3 +1,8 @@
+provider "azurerm" {
+  # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
+  version = "~>1.35.0"
+}
+
 resource "azurerm_resource_group" "rg-cicd" {
   name     = "rg-cicd-tst-001"
   location = "West Europe"
@@ -23,7 +28,7 @@ resource "azurerm_storage_account" "st-cicd" {
 
 resource "azurerm_storage_share" "share-cicd" {
   name                 = "stsharecicd"
-  resource_group_name  = "${azurerm_resource_group.rg-cicd.name}"
+  # deprated - resource_group_name  = "${azurerm_resource_group.rg-cicd.name}"
   storage_account_name = "${azurerm_storage_account.st-cicd.name}"
 
   quota = 50
@@ -41,13 +46,19 @@ resource "azurerm_container_group" "cocicd" {
     image  = "knoflook/vsts-agent-infrastructure"
     cpu    = "0.5"
     memory = "1.5"
-    port   = "80"
+    ports {
+      port   = "80"
+      protocol = "TCP"
+    }
 
-    environment_variables {
-      "VSTS_ACCOUNT" = "${var.vsts-account}"
-      "VSTS_TOKEN"   = "${var.vsts-token}"
+    environment_variables = {
       "VSTS_AGENT"   = "${var.vsts-agent}"
       "VSTS_POOL"    = "${var.vsts-pool}"
+    }
+
+    secure_environment_variables = {
+      "VSTS_ACCOUNT" = "${var.vsts-account}"
+      "VSTS_TOKEN"   = "${var.vsts-token}"
     }
 
     volume {

@@ -30,12 +30,12 @@ Lenishas image (possibly older) is available on Docker Hub under [lenisha/vsts-a
 - `VSTS_POOL`: the name of your agent pool (here: `"ACI-Pool"`)
 
 3 Set up your Azure environment  
-Open <https://shell.azure.com>  
-`git clone https://github.com/knoflook/vsts-agent-infrastructure.git`  
+Open <https://shell.azure.com>, select Bash shell, then:
+`git clone https://github.com/baidarka/vsts-agent-infrastructure.git`  
 `cd vsts-agent-infrastructure/terraform`  
 `terraform init`  
 `terraform plan`  
-`terraform apply -var vsts-account=<vsts account> -var vsts-token=<pat token>`  
+`terraform apply -var vsts-account=<vsts account> -var vsts-token=<pat token> -var-file="variables.tfvars"`
 
 
 ## Notes
