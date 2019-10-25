@@ -53,5 +53,5 @@ docker run \
   -e VSTS_TOKEN=<pat> \
   -e VSTS_AGENT='$(hostname)-agent' \
   -e VSTS_POOL=ACI-pool \
-  -it [lenisha/vsts-agent-infrastructure](https://github.com/lenisha/vsts-agent-infrastructure)
-```
+  -it knoflook/vsts-agent-infrastructure:1.0.0
+````
