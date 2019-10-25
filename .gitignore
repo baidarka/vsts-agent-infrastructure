@@ -11,6 +11,5 @@
 
 # .tfvars files
 *.tfvars
-!terraform.tfvars
 
 *.key
