@@ -2,10 +2,11 @@ FROM mcr.microsoft.com/azure-pipelines/vsts-agent:latest AS builder
 
 # Build-time metadata as defined at http://label-schema.org
 
-# Retain pointers to the original author
-LABEL org.label-schema.name="Azure DevOps Build Agent with Infrastrucure Tools" \
-    org.label-schema.url="https://github.com/lenisha/" \
-    org.label-schema.vcs-url="https://github.com/lenisha/vsts-agent-infrastructure" \
+# Labels for Microbadger
+LABEL org.label-schema.name="Azure DevOps Build Agent with Terraform, Packer and Ansible" \
+    org.label-schema.description="Azure CICD example, fork from https://github.com/lenisha/" \
+    org.label-schema.url="https://github.com/knoflook/" \
+    org.label-schema.vcs-url="https://github.com/knoflook/vsts-agent-infrastructure" \
     org.label-schema.schema-version="1.0"
 
 ENV TERRAFORM_VERSION 0.12.12
