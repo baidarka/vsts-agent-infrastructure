@@ -10,12 +10,11 @@ Please note that the availability of Terraform within the build container is unr
 
 Since collaboration on Docker Hub is not (yet?) set up, the resulting container image may be available on Docker Hub in various personal repositories.
 
-The scripts in this fork point to: [knoflook/vsts-agent-infrastructure](https://cloud.docker.com/repository/docker/knoflook/vsts-agent-infrastructure)
+The scripts in this fork point to: [knoflook/vsts-agent-infrastructure](https://cloud.docker.com/repository/docker/knoflook/vsts-agent-infrastructure)  
 [![Downloads from Docker Hub](https://img.shields.io/docker/pulls/knoflook/vsts-agent-infrastructure.svg)](https://registry.hub.docker.com/u/knoflook/vsts-agent-infrastructure)
 [![Stars on Docker Hub](https://img.shields.io/docker/stars/knoflook/vsts-agent-infrastructure.svg)](https://registry.hub.docker.com/u/knoflook/vsts-agent-infrastructure) [![Microbadger Badge](https://images.microbadger.com/badges/image/knoflook/vsts-agent-infrastructure.svg)](https://microbadger.com/images/knoflook/vsts-agent-infrastructure "knoflook based image")
 
-Lenishas image (possibly older) is available on Docker Hub under [lenisha/vsts-agent-infrastructure](https://hub.docker.com/r/lenisha/vsts-agent-infrastructure)
-
+Lenishas image (possibly older) is available on Docker Hub under [lenisha/vsts-agent-infrastructure](https://hub.docker.com/r/lenisha/vsts-agent-infrastructure)  
 [![Downloads from Docker Hub](https://img.shields.io/docker/pulls/lenisha/vsts-agent-infrastructure.svg)](https://registry.hub.docker.com/u/lenisha/vsts-agent-infrastructure)
 [![Stars on Docker Hub](https://img.shields.io/docker/stars/lenisha/vsts-agent-infrastructure.svg)](https://registry.hub.docker.com/u/lenisha/vsts-agent-infrastructure) [![Microbadger Badge](https://images.microbadger.com/badges/image/lenisha/vsts-agent-infrastructure.svg)](https://microbadger.com/images/lenisha/vsts-agent-infrastructure "Get your own image badge on microbadger.com")
 
