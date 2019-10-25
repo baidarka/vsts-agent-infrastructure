@@ -35,7 +35,7 @@ Open <https://shell.azure.com>, select Bash shell, then:
 `cd vsts-agent-infrastructure/terraform`  
 `terraform init`  
 `terraform plan`  
-`terraform apply -var azp-pool="ACI-pool" -var azp-url="https://dev.azure.com/[org]" -var azp-token="pat"`
+`terraform apply -var vsts-pool="ACI-pool" -var vsts-account="[org]" -var vsts-token="[pat]"`
 
 ## Notes
 
