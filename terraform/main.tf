@@ -72,7 +72,7 @@ resource "azurerm_container_group" "cocicd" {
     }
   }
 
-  tags {
+  tags = {
     env = "tst"
   }
 }
