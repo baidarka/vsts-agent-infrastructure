@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/azure-pipelines/vsts-agent:latest AS builder
+FROM mcr.microsoft.com/azure-pipelines/vsts-agent:latest
 
 # Build-time metadata as defined at http://label-schema.org
 

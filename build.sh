@@ -11,8 +11,5 @@ if [ -z "$registry" ]; then
     exit 1
 fi
 
-docker build -t vsts-agent-infrastructure --build-arg VCS_REF="git rev-parse --short HEAD" .
-
-# point to you own repo on Docker Hub... (or set up some form of collaboration) 
-docker tag vsts-agent-infrastructure "$registry"/vsts-agent-infrastructure:1.0.0
+docker build -t "$registry"/vsts-agent-infrastructure:1.0.0 --build-arg VCS_REF="git rev-parse --short HEAD" .
 docker push "$registry"/vsts-agent-infrastructure

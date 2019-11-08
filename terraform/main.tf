@@ -1,3 +1,5 @@
+####################################################################
+## Providers
 provider "azurerm" {
   version = "~> 1.35"
 }
@@ -6,6 +8,8 @@ provider "random" {
   version = "~> 2.2"
 }
 
+####################################################################
+## Resources
 resource "azurerm_resource_group" "rg-cicd" {
   name     = "rg-cicd-tst-001"
   location = "West Europe"
