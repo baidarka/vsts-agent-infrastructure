@@ -11,5 +11,5 @@ if [ -z "$registry" ]; then
     exit 1
 fi
 
-docker build -t "$registry"/vsts-agent-infrastructure:1.0.0 --build-arg VCS_REF="git rev-parse --short HEAD" .
+docker build -t "$registry"/vsts-agent-infrastructure:1.0.1 --build-arg VCS_REF="git rev-parse --short HEAD" .
 docker push "$registry"/vsts-agent-infrastructure
